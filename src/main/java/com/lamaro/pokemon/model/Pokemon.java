@@ -28,11 +28,6 @@ public class Pokemon extends BaseEntity {
     )
     private Set<PokemonType> pokemonType = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-    @JoinTable(
-            name = "pokemon_attacks",
-            joinColumns = {@JoinColumn(name = "pokemon_id")},
-            inverseJoinColumns = {@JoinColumn(name = "pokemon_attack_id")}
-    )
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<PokemonAttack> attacks = new HashSet<>();
 }
