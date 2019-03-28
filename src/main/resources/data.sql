@@ -76,8 +76,8 @@ INSERT INTO pokemon_attack (name, damage) VALUES ( 'Water', '1' ),
                                                  ( 'Fire', '2' ),
                                                  ( 'Earth', '3' ),
                                                  ( 'Wind', '4' );
-INSERT into pokemon_attacks (pokemon_id, pokemon_attack_id) values ( '1', '1' ),
-                                                           ( '2', '2' ),
-                                                           ( '3', '3' ),
-                                                           ( '4', '4' );
+INSERT into pokemon_attacks (pokemon_id, attacks_id) values ( '1', '1' ),
+                                                                   ( '2', '2' ),
+                                                                   ( '3', '3' ),
+                                                                   ( '4', '4' );
 
